@@ -11,6 +11,7 @@ const PasswordChangeCard = () => {
               <p className="text-white text-2xl font-semibold text-center mb-6">Reset Your Password</p>
               <div className='text-center'>
                 <label className="block text-lg text-white mb-2" htmlFor="email">Enter your registered email</label>
+                <div className='mt-4'>
                 <input
                   className="w-full text-center px-5 py-3 text-gray-800 bg-gray-100 rounded-lg focus:outline-none focus:bg-white transition duration-200 ease-in-out"
                   type="email"
@@ -19,6 +20,7 @@ const PasswordChangeCard = () => {
                   aria-label="email"
                   required
                 />
+                </div>
               </div>
               <div className="mt-6 flex items-center justify-center">
                 <button
@@ -31,7 +33,7 @@ const PasswordChangeCard = () => {
 
               <div className="mt-6 text-center">
                 <Link
-                  className="inline-block text-sm text-white font-light hover:text-blue-300 transition duration-200 ease-in-out"
+                  className="inline-block right-0 align-baseline font-bold text-sm text-white hover:text-red-400"
                   to="/signin"
                 >
                   Back to Login
@@ -49,9 +51,6 @@ const PasswordChangeCard = () => {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-          }
-          .backdrop-blur-lg {
-            backdrop-filter: blur(10px);
           }
         `}
       </style>
