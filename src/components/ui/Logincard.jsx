@@ -39,12 +39,12 @@ const Logincard = () => {
                 >
                   Submit
                 </button>
-                <a
+                <Link
                   className="inline-block right-0 align-baseline font-bold text-sm text-white hover:text-red-400"
-                  href="#"
+                  to="/passwordchange"
                 >
                   Forgot your password?
-                </a>
+                </Link>
               </div>
               <div className="text-center">
                 <Link
